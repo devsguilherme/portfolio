@@ -103,8 +103,12 @@ main{
 }
 
 .about-me a{
-  padding: 1rem 4.4rem;
-  display: inline-block;
+  max-width: 20rem;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -209,8 +213,13 @@ footer h2{
   }
 
   .about-me a{
+    margin: 0 auto;
     padding: 1rem 4.4rem;
     font-size: 1.4rem;
+  }
+
+  .about-me a img{
+    width: 2rem;
   }
 
   .card h3{
