@@ -66,11 +66,17 @@ header img{
   margin: 0 auto;
 }
 
+.image{
+  border: 2px solid #1d1b1b;
+  border-radius: 100%;
+}
+
 header h1{
   margin-top: 2rem;
   font-size: 3.6rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  letter-spacing: 0.0025rem;
   color: white;
 }
 
@@ -163,7 +169,7 @@ footer{
 }
 
 footer h2{
-  color: #6E26C9;
+  color: #A15BF9;
 }
 
 @media (max-width: 865px) {
