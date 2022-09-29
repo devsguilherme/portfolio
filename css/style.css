@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #121212;
+}
+
+h2{
+  margin-bottom: 1.5rem;
+  font-size: 3.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #E2E2E2;
+}
+
+h3{
+  font-size: 2.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+p{
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.5rem;
+  color: #DEDEDE;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+ul img{
+  width: 35px;
+}
+
+.grid {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 90% 1fr;
+}
+
+header, main, footer {
+  grid-column: 2;
+  margin: auto;
+}
+
+header{
+  display: grid;
+  margin-bottom: 7rem;
+}
+
+header img{
+  margin: 0 auto;
+}
+
+header h1{
+  margin-top: 2rem;
+  font-size: 3.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+
+header p{
+  margin: 1rem 0 2rem 0;
+  font-size: 2.1rem;
+  font-family: 'Roboto';
+  color: #E2E2E2;
+  text-align: center;
+}
+
+
+main{
+  margin-bottom: 7rem;
+  max-width: 120rem;
+  width: 100%;
+  display: grid;
+  gap: 10rem;
+}
+
+.about-me p{
+  max-width: 65rem;
+}
+
+.about-me a{
+  padding: 1rem 4.4rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #CEABFC;
+  background: linear-gradient(180deg, #6E26C9 0%, #5513A9 100%);
+  border-radius: 0.8rem;
+}
+
+.my-skills{
+  text-align: center;
+}
+
+.my-skills h3{
+  font-size: 3.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.card{
+  padding: 2rem 0;
+  max-width: 37rem;
+  width: 100%;
+  background-color: #2D2D2D;
+  border-radius: 0.8rem;
+}
+
+.card h3{
+  margin-bottom: 1rem;
+}
+
+.accordion{
+  display: grid;
+  gap: 4rem;
+}
+
+.accordion .item{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252525;
+  border-radius: 0.8rem;
+}
+
+.course img{
+  margin-bottom: 10px;
+}
+
+footer{
+  max-width: 49rem;
+  text-align: center;
+}
+
+footer h2{
+  color: #6E26C9;
+}
+
+@media (max-width: 865px) {
+  .card{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  header h1{
+    font-size: 3rem;
+  }
+
+  header p{
+    font-size: 1.9rem;
+  }
+
+  main 
+  .about-me, 
+  .courses h2, p{
+    text-align: center;
+  }
+
+  main{
+    gap: 7.5rem;
+  }
+
+  h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  p{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.24rem;
+  }
+
+  .about-me a{
+    padding: 1rem 4.4rem;
+    font-size: 1.4rem;
+  }
+
+  .card h3{
+    font-size: 2.4rem;
+  }
+
+  .course h3{
+    font-size: 2.1rem;
+  }
+  
+  .arrow-down img{
+    width: 3.5rem;
+  }
+}
